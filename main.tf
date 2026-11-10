@@ -13,13 +13,13 @@ terraform {
 
   # The bucket you created by hand in step 0. Backends can't use variables, write the values here.
   backend "s3" {
-    bucket       = "CHANGE-ME"
+    bucket       = "csepella-csk-x-362099375729-eu-west-3-an"
     key          = "infra-code/terraform.tfstate"
-    region       = "CHANGE-ME"
+    region       = "eu-west-3"
     use_lockfile = true
   }
 }
 
 provider "aws" {
-  region = "CHANGE-ME"
+  region = "eu-west-3"
 }
